@@ -9,7 +9,35 @@
 <body>
     <div id="gameArea"></div>
     <div id="scoreBoard">得分: <span id="score">0</span></div>
+    
+    <!-- 难度选择 -->
+    <label for="difficulty">选择难度:</label>
+    <select id="difficulty">
+        <option value="easy">简单</option>
+        <option value="medium">中等</option>
+        <option value="hard">困难</option>
+    </select>
+
     <button id="startButton">开始游戏</button>
+
+    <!-- 聊天系统 -->
+    <div id="chatContainer">
+        <div id="chatMessages"></div>
+        <input type="text" id="nickname" placeholder="设置昵称" />
+        <input type="text" id="chatInput" placeholder="输入消息..." />
+        <button id="sendButton">发送</button>
+        <div id="emojiPicker">
+            <button class="emoji" data-emoji="😀">😀</button>
+            <button class="emoji" data-emoji="😂">😂</button>
+            <button class="emoji" data-emoji="😍">😍</button>
+            <button class="emoji" data-emoji="😎">😎</button>
+            <button class="emoji" data-emoji="😢">😢</button>
+            <button class="emoji" data-emoji="😡">😡</button>
+            <button class="emoji" data-emoji="🎉">🎉</button>
+            <button class="emoji" data-emoji="❤️">❤️</button>
+        </div>
+    </div>
+
     <script src="tcs.js"></script>
 </body>
 </html>
